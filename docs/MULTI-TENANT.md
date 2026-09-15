@@ -45,8 +45,8 @@ licenseauditor --tenants-file msp-tenants.json \
 ```
 
 (Credentials can also come from `LICENSEAUDITOR_CLIENT_ID`/`LICENSEAUDITOR_CLIENT_SECRET` env
-vars, same as `--scheduled`.) The auth mode is app-only automatically for a multi-tenant run —
-`--scheduled` is optional and only changes the sign-in message, not the behavior.
+vars, same as `--scheduled`.) A multi-tenant run always signs in app-only with your app registration;
+you don't need `--scheduled`, and no device code appears.
 
 Console output shows each tenant as it's scanned, then a roll-up summary:
 
