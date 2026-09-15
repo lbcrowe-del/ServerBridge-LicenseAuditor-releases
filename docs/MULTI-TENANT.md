@@ -79,7 +79,11 @@ any failed tenants by name and error so you know exactly which ones need attenti
   (licensed users, reclaimable seats, recoverable $/yr), and a callout for any tenants that
   couldn't be scanned.
 - **One CSV** (`--output-csv`) — every dormant seat across every tenant, with a `Tenant` column so
-  you can filter/pivot per customer.
+  you can filter/pivot per customer, plus `Flag` and `FlagDetail` columns for accounts to review.
+- **A review of licenses that may not be needed**, in the PDF and CSV — licensed guest accounts and
+  licensed shared, room and equipment mailboxes in each tenant, with a possible extra saving that is
+  *not* added to the total. Mailbox types come from each tenant's mailbox usage report
+  (`Reports.Read.All`, already required), which Microsoft refreshes every day or two.
 
 ## What this isn't
 
